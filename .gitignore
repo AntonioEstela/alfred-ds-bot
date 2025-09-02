@@ -1,0 +1,59 @@
+# Node
+node_modules/
+
+# Build outputs
+dist/
+build/
+lib/
+out/
+
+# TypeScript incremental build info
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment / secrets
+.env
+.env.*.local
+.env.local
+secrets.env
+credentials.json
+token.json
+bot_token
+*.pem
+*.key
+
+# Databases
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+
+# Coverage
+coverage/
+coverage-*/
+
+# Caches
+.cache/
+.npm/
+.eslintcache
+jest-cache/
+
+# Editor / OS
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+Thumbs.db
+
+# Misc
+*.tgz
+.vagrant/
