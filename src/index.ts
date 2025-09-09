@@ -8,6 +8,7 @@ import {
 import dotenv from 'dotenv';
 import path from 'path';
 import fs from 'fs';
+import { generateDependencyReport } from '@discordjs/voice';
 
 dotenv.config();
 
