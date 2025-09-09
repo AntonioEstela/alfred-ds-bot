@@ -15,6 +15,7 @@ module.exports = {
         channelId: voiceChannel.id,
         guildId: voiceChannel.guild.id,
         adapterCreator: voiceChannel.guild.voiceAdapterCreator,
+        selfDeaf: false,
       });
     } else {
       await interaction.reply(
