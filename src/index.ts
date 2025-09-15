@@ -1,14 +1,7 @@
-import {
-  Client,
-  Collection,
-  Events,
-  GatewayIntentBits,
-  MessageFlags,
-} from 'discord.js';
+import { Client, Collection, Events, MessageFlags } from 'discord.js';
 import dotenv from 'dotenv';
 import path from 'path';
 import fs from 'fs';
-import { generateDependencyReport } from '@discordjs/voice';
 
 dotenv.config();
 
@@ -19,7 +12,9 @@ declare module 'discord.js' {
   }
 }
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({
+  intents: ['Guilds', 'GuildVoiceStates', 'GuildMessages'],
+});
 
 client.once(Events.ClientReady, c => {
   console.log(`Ready! Logged in as ${c.user.tag}`);
